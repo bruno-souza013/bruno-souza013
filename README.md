@@ -1,15 +1,46 @@
-# Olá, eu sou o Bruno!
+# 👋 Olá, eu sou o Bruno!  
 
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=bruno-souza013&show_icons=true&theme=dracula)
-![Linguagens mais usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-souza013&layout=compact&theme=dracula&langs_count=8)
+🎓 Estudante da FATEC no curso de **Desenvolvimento de Software Multiplataforma**.  
+💻 Apaixonado por tecnologia, programação e jogos.  
+🌱 Sempre buscando aprender novas linguagens, frameworks e ferramentas para expandir meu conhecimento.  
 
-## Sobre mim
-Sou estudante da FATEC no curso de Desenvolvimento de Software Multiplataforma
+---
 
-### Tecnologias
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+## 🚀 Tecnologias  
+
+### 🔹 Linguagens  
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40"/>
+</p>
+
+### 🔹 Frameworks & Bibliotecas  
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="40" height="40"/>
+</p>
+
+### 🔹 Bancos de Dados  
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" height="40"/>
+</p>
+
+### 🔹 Ferramentas & Outras Tecnologias  
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="40" height="40"/>
+</p>
+
+---
+
+
+## 📬 Contato  
+
+📧 E-mail: **brunolopes.bl54@gmail.com**  
+💼 LinkedIn: [Bruno Souza](https://www.linkedin.com/in/bruno-souza-506523323/)  
+🐙 GitHub: [bruno-souza013](https://github.com/bruno-souza013)  
