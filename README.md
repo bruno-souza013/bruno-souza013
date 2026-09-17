@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="./assets/akuma2.gif" width="280">
+
 **Desenvolvedor Backend • Java • Python • Dados & IA**
 
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bruno-souza013)
