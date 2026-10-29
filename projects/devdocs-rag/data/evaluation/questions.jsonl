@@ -1,0 +1,10 @@
+{"question":"Qual ferramenta executa os testes automatizados?","expected_source":"python-basics.md"}
+{"question":"Por que devo registrar dataset e métrica nos experimentos?","expected_source":"python-basics.md"}
+{"question":"Quais cuidados devo ter ao versionar dependências Python?","expected_source":"python-basics.md"}
+{"question":"Qual método HTTP normalmente é usado para criar um recurso?","expected_source":"api-guidelines.md"}
+{"question":"O que uma rota de health check deve evitar expor?","expected_source":"api-guidelines.md"}
+{"question":"Quais casos devem aparecer nos testes de uma API?","expected_source":"api-guidelines.md"}
+{"question":"Quais são as etapas comuns de um pipeline RAG?","expected_source":"rag-design.md"}
+{"question":"Como posso rastrear de qual documento veio um trecho recuperado?","expected_source":"rag-design.md"}
+{"question":"O que Recall at k mede e o que ele não garante?","expected_source":"rag-design.md"}
+{"question":"Um RAG elimina completamente alucinações?","expected_source":"rag-design.md"}
