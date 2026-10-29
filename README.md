@@ -40,6 +40,22 @@ Experimento educacional de classificação baseado em atributos numéricos, com 
 
 [Repositório](https://github.com/bruno-souza013/knn_gripe)
 
+### 5. DevDocs RAG — assistente técnico com fontes
+
+MVP de Retrieval-Augmented Generation com chunking, embeddings locais, busca semântica, FastAPI e geração via Ollama. Inclui documentos de demonstração, testes unitários e um conjunto curado para avaliar Recall@3; os resultados ainda devem ser executados e registrados.
+
+**Tecnologias:** Python, FastAPI, Sentence Transformers, NumPy, Ollama, Pytest.
+
+[Ver código e instruções](https://github.com/bruno-souza013/bruno-souza013/tree/main/projects/devdocs-rag)
+
+### 6. Experimento NLP — Disaster Tweets
+
+Notebook planejado para comparar baseline e classificação TF-IDF + Logistic Regression com divisão estratificada, F1, análise de erros e geração de submissão da competição.
+
+**Status:** notebook preparado no GitHub; precisa ser executado e publicado no Kaggle para registrar métricas reais.
+
+[Ver notebook e instruções](https://github.com/bruno-souza013/bruno-souza013/tree/main/projects/kaggle-nlp-disaster-tweets)
+
 ## Tecnologias que utilizo em projetos
 
 - **IA/ML:** Python, PyTorch, scikit-learn, NLTK, avaliação de modelos
@@ -50,6 +66,6 @@ Experimento educacional de classificação baseado em atributos numéricos, com 
 
 ## Foco atual
 
-Aprofundamento em engenharia de Machine Learning, avaliação experimental, inferência eficiente e integração de modelos de IA a aplicações de software. Também estou construindo projetos práticos com LLMs e RAG para ampliar meu portfólio em AI Engineering.
+Aprofundamento em engenharia de Machine Learning, avaliação experimental, inferência eficiente e integração de modelos de IA a aplicações de software. Estou também desenvolvendo projetos com LLMs/RAG e organizando a publicação de artefatos autorizados no Hugging Face.
 
 > Construir, medir, documentar e melhorar — da experimentação à aplicação.
