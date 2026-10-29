@@ -65,7 +65,7 @@ def load_chunks(
     chunk_size: int = 900,
     overlap: int = 120,
 ) -> list[Chunk]:
-    """Load local Markdown and TXT files; paths become source identifiers."""
+    """Load local Markdown and TXT files; file paths become source identifiers."""
     root = Path(docs_dir)
     if not root.exists():
         return []
@@ -90,25 +90,39 @@ def retrieve(
     chunks: Sequence[Chunk],
     embedder: Embedder,
     top_k: int = 3,
+    document_vectors: np.ndarray | None = None,
 ) -> list[RetrievedChunk]:
-    """Rank chunks by cosine similarity to the question embedding."""
+    """Rank chunks by cosine similarity; reuse precomputed document vectors when supplied."""
     if top_k < 1:
         raise ValueError("top_k must be at least 1")
     if not question.strip() or not chunks:
         return []
 
-    texts = [chunk.text for chunk in chunks]
-    vectors = np.asarray(embedder.encode([question, *texts]), dtype=np.float32)
-    if vectors.ndim != 2 or vectors.shape[0] != len(texts) + 1:
-        raise ValueError("Embedder returned an invalid embedding matrix")
+    if document_vectors is None:
+        all_vectors = np.asarray(
+            embedder.encode([question, *(chunk.text for chunk in chunks)]),
+            dtype=np.float32,
+        )
+        if all_vectors.ndim != 2 or all_vectors.shape[0] != len(chunks) + 1:
+            raise ValueError("Embedder returned an invalid embedding matrix")
+        query_vector = all_vectors[0]
+        doc_vectors = all_vectors[1:]
+    else:
+        query_vectors = np.asarray(embedder.encode([question]), dtype=np.float32)
+        doc_vectors = np.asarray(document_vectors, dtype=np.float32)
+        if query_vectors.ndim != 2 or query_vectors.shape[0] != 1:
+            raise ValueError("Embedder returned an invalid query embedding")
+        if doc_vectors.ndim != 2 or doc_vectors.shape[0] != len(chunks):
+            raise ValueError("Precomputed document vectors do not match the chunks")
+        if doc_vectors.shape[1] != query_vectors.shape[1]:
+            raise ValueError("Query and document embedding dimensions do not match")
+        query_vector = query_vectors[0]
 
-    query_vector = vectors[0]
-    document_vectors = vectors[1:]
     query_norm = np.linalg.norm(query_vector)
-    document_norms = np.linalg.norm(document_vectors, axis=1)
+    document_norms = np.linalg.norm(doc_vectors, axis=1)
     denominator = document_norms * query_norm
     similarities = np.divide(
-        document_vectors @ query_vector,
+        doc_vectors @ query_vector,
         denominator,
         out=np.zeros(len(chunks), dtype=np.float32),
         where=denominator > 0,
