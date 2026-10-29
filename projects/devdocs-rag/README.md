@@ -7,6 +7,7 @@ Um MVP de **Retrieval-Augmented Generation (RAG)** que indexa arquivos Markdown/
 ## Objetivos de engenharia
 
 - Separar ingestão, chunking, recuperação e geração.
+- Calcular os embeddings dos documentos uma vez no startup e reutilizá-los nas consultas.
 - Manter documentos e inferência no ambiente local.
 - Retornar fontes para inspeção das respostas.
 - Ter testes automatizados e perguntas de avaliação.
@@ -70,6 +71,9 @@ Exemplo de corpo JSON para POST /ask:
 A resposta inclui sources com arquivo, ID do trecho, similaridade e excerto para auditoria.
 
 ## Avaliação
+
+Os vetores dos documentos são pré-computados no carregamento e reutilizados por pergunta; somente a pergunta precisa ser embutida a cada consulta. Isso evita recodificar todos os documentos em cada requisição.
+
 
 O arquivo data/evaluation/questions.jsonl contém perguntas e fontes esperadas. Execute o script para medir Recall@3 na recuperação. Esse indicador verifica se a fonte esperada aparece entre os três primeiros resultados; não mede, sozinho, a qualidade factual da resposta gerada.
 
