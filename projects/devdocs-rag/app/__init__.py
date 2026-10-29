@@ -1,1 +1,0 @@
-"""DevDocs RAG application package."""
