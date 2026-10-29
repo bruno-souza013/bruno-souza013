@@ -1,76 +1,55 @@
-# Olá, eu sou o Bruno!
+# Bruno Lopes de Souza
 
-<div align="center">
+### AI Engineering • Machine Learning • Software Engineering
 
-<img src="./assets/akuma2.gif" width="280">
+Tecnólogo em Desenvolvimento de Software Multiplataforma pela FATEC Registro, formado em 2026. Meu foco é construir software que integra IA de forma útil e mensurável, explorando pipelines de dados, redes neurais, inferência local, APIs e avaliação de modelos.
 
-**Desenvolvedor Backend • Java • Python • Dados & IA**
+[LinkedIn](https://www.linkedin.com/in/bruno-souza-506523323/) · [E-mail](mailto:brunolopes.bl54@gmail.com)
 
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bruno-souza013)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/bruno-souza-506523323/)
-[![Email](https://img.shields.io/badge/Email-8B0000?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:brunolopes.bl54@gmail.com)
+## Projetos em destaque
 
-</div>
+### 1. CalmWave — filtragem de áudio com IA
+Projeto acadêmico em equipe de tecnologia assistiva para apoiar pessoas com Transtorno do Processamento Auditivo Central (TPAC).
 
----
+- **IA/ML:** rede neural U-Net aplicada ao aprimoramento de fala, treinada em PyTorch com o dataset VoiceBank-DEMAND.
+- **Inferência:** modelo exportado para ONNX e integrado a um aplicativo Android com ONNX Runtime para processamento local, sem enviar o áudio de voz para a nuvem.
+- **Pipeline:** áudio PCM → STFT/espectrograma → inferência da máscara espectral → reconstrução do áudio.
+- **Resultados reportados no artigo:** latência ponta a ponta estimada em aproximadamente 200 ms; nos testes em diferentes smartphones, STOI médio de 0,89 e SDR médio de 11,94 dB.
+- **Minha atuação:** desenvolvimento do aplicativo mobile e dos fluxos de interação/áudio no contexto do projeto em equipe.
 
-## Sobre mim
+[Leia o estudo de caso técnico](./projects/calmwave-case-study.md)
 
-🎓 **Tecnólogo em Desenvolvimento de Software Multiplataforma — FATEC**
+### 2. CalmWave Audio Benchmark API
+API em FastAPI para comparar áudio limpo e áudio processado, retornando métricas de qualidade PESQ, STOI e SDR. Inclui execução com Docker.
 
-💻 Desenvolvedor com experiência prática na criação de **sistemas internos e automações**.
+**Tecnologias:** Python, FastAPI, processamento de áudio, Docker.
 
-☕ Atualmente focado no desenvolvimento **Backend com Java e Spring Boot**.
+[Repositório](https://github.com/bruno-souza013/metricas-audio)
 
-🐍 Também exploro **Python, Dados e Inteligência Artificial**.
+### 3. Pipeline de preparação de avaliações em português
+Pipeline de preparação de texto com limpeza, remoção de stopwords em português, tokenização e separação estratificada entre treino e teste.
 
+**Tecnologias:** Python, pandas, NLTK, scikit-learn.
 
-> `Code. Learn. Build. Repeat.`
+[Repositório](https://github.com/bruno-souza013/classificador_avaliacoes_PLN)
 
----
+### 4. Experimento de classificação com KNN
+Experimento educacional de classificação baseado em atributos numéricos, com comparação de diferentes valores de K e relatórios de métricas e matrizes de confusão. Não é uma ferramenta de diagnóstico.
 
-## 🥋 Competências
+**Tecnologias:** Python, KNN, métricas de classificação.
 
-### ⚡ Linguagens
+[Repositório](https://github.com/bruno-souza013/knn_gripe)
 
-<p align="left">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="45"/>
-</p>
+## Tecnologias que utilizo em projetos
 
-### 🛠️ Backend & Frameworks
+- **IA/ML:** Python, PyTorch, scikit-learn, NLTK, avaliação de modelos
+- **IA em produção e integração:** ONNX Runtime, FastAPI, APIs REST, Docker
+- **Desenvolvimento:** Kotlin, Java, JavaScript/TypeScript, Node.js
+- **Dados:** pandas, SQL, MySQL, PostgreSQL, MongoDB
+- **Ferramentas:** Git e GitHub
 
-<p align="left">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="45"/>
-</p>
+## Foco atual
 
-### 🗄️ Bancos de Dados
+Aprofundamento em engenharia de Machine Learning, avaliação experimental, inferência eficiente e integração de modelos de IA a aplicações de software. Também estou construindo projetos práticos com LLMs e RAG para ampliar meu portfólio em AI Engineering.
 
-<p align="left">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="45"/>
-</p>
-
----
-
-## ⚔️ Projetos em destaque
-
-### 🧠 VVAI — Filtragem de Áudio com IA
-
-Sistema desenvolvido como projeto acadêmico para filtragem de áudio utilizando **Inteligência Artificial**, com processamento local e integração entre aplicação mobile e backend.
-
-**Stack:** `Kotlin` `Python` `PyTorch` `ONNX Runtime` `Supabase`
-
----
-
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=bruno-souza013&style=flat-square&color=8B0000" alt="Profile views"/>
-
-</div>
+> Construir, medir, documentar e melhorar — da experimentação à aplicação.
