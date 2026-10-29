@@ -24,6 +24,7 @@ def main() -> None:
         raise SystemExit(f"Nenhum documento foi encontrado em {DOCS_DIR}")
 
     embedder = SentenceTransformer(MODEL_NAME)
+    document_vectors = embedder.encode([chunk.text for chunk in chunks])
     rows = [
         json.loads(line)
         for line in QUESTIONS_PATH.read_text(encoding="utf-8").splitlines()
@@ -34,7 +35,13 @@ def main() -> None:
 
     hits = 0
     for row in rows:
-        results = retrieve(row["question"], chunks, embedder, top_k=TOP_K)
+        results = retrieve(
+            row["question"],
+            chunks,
+            embedder,
+            top_k=TOP_K,
+            document_vectors=document_vectors,
+        )
         found = any(
             result.chunk.source == row["expected_source"] for result in results
         )
