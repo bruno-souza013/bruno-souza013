@@ -46,7 +46,7 @@ Gosto de entender como as coisas funcionam por dentro, experimentar, medir os re
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
 </div>
 
-### Ferramentas e runtimes
+### Ferramentas
 
 <div align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
