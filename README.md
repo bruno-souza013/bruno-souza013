@@ -1,8 +1,8 @@
 # Bruno Lopes de Souza
 
-### AI Engineering • Machine Learning • Software Engineering
+### Software Engineering • Machine Learning • AI
 
-Tecnólogo em Desenvolvimento de Software Multiplataforma pela FATEC Registro, formado em 2026. Meu foco é construir software que integra IA de forma útil e mensurável, explorando pipelines de dados, redes neurais, inferência local, APIs e avaliação de modelos.
+Tecnólogo em Desenvolvimento de Software Multiplataforma pela FATEC Registro. Meu foco é construir software que integra IA de forma útil e mensurável, explorando pipelines de dados, redes neurais, inferência local, APIs e avaliação de modelos.
 
 [LinkedIn](https://www.linkedin.com/in/bruno-souza-506523323/) · [E-mail](mailto:brunolopes.bl54@gmail.com)
 
@@ -52,8 +52,6 @@ MVP de Retrieval-Augmented Generation com chunking, embeddings locais, busca sem
 
 Notebook planejado para comparar baseline e classificação TF-IDF + Logistic Regression com divisão estratificada, F1, análise de erros e geração de submissão da competição.
 
-**Status:** notebook preparado no GitHub; precisa ser executado e publicado no Kaggle para registrar métricas reais.
-
 [Ver notebook e instruções](https://github.com/bruno-souza013/bruno-souza013/tree/main/projects/kaggle-nlp-disaster-tweets)
 
 ## Tecnologias que utilizo em projetos
@@ -67,5 +65,3 @@ Notebook planejado para comparar baseline e classificação TF-IDF + Logistic Re
 ## Foco atual
 
 Aprofundamento em engenharia de Machine Learning, avaliação experimental, inferência eficiente e integração de modelos de IA a aplicações de software. Estou também desenvolvendo projetos com LLMs/RAG e organizando a publicação de artefatos autorizados no Hugging Face.
-
-> Construir, medir, documentar e melhorar — da experimentação à aplicação.
