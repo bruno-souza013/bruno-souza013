@@ -68,3 +68,33 @@ def test_retrieve_returns_empty_for_empty_question_or_chunks():
     chunks = [Chunk("one#chunk-1", "one", "Python and pytest.")]
     assert retrieve("  ", chunks, embedder) == []
     assert retrieve("question", [], embedder) == []
+
+
+class CountingEmbedder(KeywordEmbedder):
+    def __init__(self):
+        self.calls = []
+
+    def encode(self, texts, **kwargs):
+        self.calls.append(list(texts))
+        return super().encode(texts, **kwargs)
+
+
+def test_retrieve_can_reuse_precomputed_document_vectors():
+    chunks = [
+        Chunk("one#chunk-1", "one", "Python projects use pytest."),
+        Chunk("two#chunk-1", "two", "REST API uses HTTP methods."),
+    ]
+    cache_builder = KeywordEmbedder()
+    cached_vectors = cache_builder.encode([chunk.text for chunk in chunks])
+    query_embedder = CountingEmbedder()
+
+    results = retrieve(
+        "How do I test Python?",
+        chunks,
+        query_embedder,
+        top_k=2,
+        document_vectors=cached_vectors,
+    )
+
+    assert results[0].chunk.source == "one"
+    assert query_embedder.calls == [["How do I test Python?"]]
