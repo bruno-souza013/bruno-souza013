@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import os
+
+import numpy as np
 from contextlib import asynccontextmanager
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -24,6 +26,7 @@ OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
 
 embedder: SentenceTransformer | None = None
 chunks: list[Chunk] = []
+document_vectors: np.ndarray | None = None
 
 
 class AskRequest(BaseModel):
@@ -45,12 +48,17 @@ class AskResponse(BaseModel):
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global embedder, chunks
+    global embedder, chunks, document_vectors
     embedder = SentenceTransformer(EMBEDDING_MODEL)
     chunks = load_chunks(DOCS_DIR)
+    document_vectors = (
+        np.asarray(embedder.encode([chunk.text for chunk in chunks]), dtype=np.float32)
+        if chunks else None
+    )
     yield
     embedder = None
     chunks = []
+    document_vectors = None
 
 
 app = FastAPI(
@@ -135,7 +143,13 @@ def ask(request: AskRequest) -> AskResponse:
             detail=f"Nenhum documento .md ou .txt foi encontrado em {DOCS_DIR}.",
         )
 
-    matches = retrieve(request.question, chunks, embedder, top_k=request.top_k)
+    matches = retrieve(
+        request.question,
+        chunks,
+        embedder,
+        top_k=request.top_k,
+        document_vectors=document_vectors,
+    )
     sources = [
         Source(
             source=item.chunk.source,
