@@ -73,7 +73,7 @@ A resposta inclui sources com arquivo, ID do trecho, similaridade e excerto para
 
 O arquivo data/evaluation/questions.jsonl contém perguntas e fontes esperadas. Execute o script para medir Recall@3 na recuperação. Esse indicador verifica se a fonte esperada aparece entre os três primeiros resultados; não mede, sozinho, a qualidade factual da resposta gerada.
 
-    python scripts/evaluate_retrieval.py
+    python -m scripts.evaluate_retrieval
     pytest -q
 
 Registre no README os resultados que você realmente obtiver, incluindo número de perguntas, modelo de embedding, hardware e limitações observadas.
