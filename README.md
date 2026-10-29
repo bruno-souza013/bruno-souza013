@@ -49,8 +49,8 @@ Gosto de entender como as coisas funcionam por dentro, experimentar, medir os re
 ### Ferramentas e runtimes
 
 <div align="center">
-  <img src="https://img.shields.io/badge/ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX Runtime">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
 </div>
 
 ## Projetos em destaque
