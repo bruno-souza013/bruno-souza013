@@ -55,23 +55,53 @@ Gosto de entender como as coisas funcionam por dentro, experimentar, medir os re
 
 ## Projetos em destaque
 
+### LLM Zero — Transformer causal em português
+
+Implementação educacional de um modelo de linguagem autorregressivo em PyTorch,
+construído do zero. O projeto inclui preparação de corpus, treinamento,
+checkpoints, métricas de validação e geração de texto.
+
+**Tecnologias:** Python, PyTorch, CUDA, NumPy, tiktoken.
+
+[Ver repositório](https://github.com/bruno-souza013/llm-zero)
+
+### Fine-tuning de LLM com QLoRA
+
+Projeto de fine-tuning de um modelo de linguagem para classificação de
+avaliações de restaurantes, utilizando técnicas de quantização e adaptadores
+LoRA para reduzir o consumo de memória durante o treinamento.
+
+**Tecnologias:** Python, PyTorch, Hugging Face Transformers, QLoRA.
+
+[Ver repositório](https://github.com/bruno-souza013/fine-tuning-restaurant-reviews)
+
 ### VVAI / CalmWave — Filtragem de áudio com IA
 
-Projeto acadêmico em equipe que utiliza uma rede neural U-Net para reduzir ruídos de fundo e melhorar a clareza da fala. O modelo foi treinado em PyTorch, exportado para ONNX e integrado a um aplicativo Android para inferência local com ONNX Runtime.
+Projeto acadêmico em equipe que utiliza uma rede neural U-Net para reduzir
+ruídos de fundo e melhorar a clareza da fala. O modelo foi treinado em PyTorch,
+exportado para ONNX e integrado a um aplicativo Android para inferência local
+com ONNX Runtime.
 
 **Tecnologias:** Kotlin, Python, PyTorch, U-Net, ONNX Runtime.
 
+[Ver repositório](https://github.com/vvAi-Startup/CalmWave)
+
 ### CalmWave Audio Benchmark API
 
-API em FastAPI para comparar áudio de referência e áudio processado, retornando métricas como PESQ, STOI e SDR. O repositório inclui opção de execução com Docker.
+API em FastAPI para comparar áudio de referência e áudio processado, retornando
+métricas como PESQ, STOI e SDR. O projeto possui suporte a Docker.
 
 **Tecnologias:** Python, FastAPI, processamento de áudio, Docker.
 
 [Ver repositório](https://github.com/bruno-souza013/metricas-audio)
 
+<details>
+<summary>Outros projetos</summary>
+
 ### Preparação de avaliações em português para PLN
 
-Pipeline de preparação de textos com limpeza, remoção de stopwords em português, tokenização e separação entre dados de treino e teste.
+Pipeline de preparação de textos com limpeza, remoção de stopwords, tokenização
+e separação entre dados de treino e teste.
 
 **Tecnologias:** Python, pandas, NLTK, scikit-learn.
 
@@ -79,11 +109,14 @@ Pipeline de preparação de textos com limpeza, remoção de stopwords em portug
 
 ### Experimento de classificação com KNN
 
-Projeto de estudo para experimentar classificação com K-Nearest Neighbors e comparar métricas como acurácia, precisão, recall e F1.
+Projeto de estudo sobre classificação com K-Nearest Neighbors e comparação de
+métricas como acurácia, precisão, recall e F1-score.
 
 **Tecnologias:** Python, KNN, avaliação de modelos.
 
 [Ver repositório](https://github.com/bruno-souza013/knn_gripe)
+
+</details>
 
 ---
 
